@@ -127,6 +127,13 @@ All connection settings live at the top of each service script:
 | `INFLUX_ORG` | `telemetry-org` |
 | `INFLUX_BUCKET` | `system-metrics` |
 
+### Secrets
+
+Copy `.env.example` to a local `.env` and fill in real values before going to
+production. The `.env` file is git-ignored so credentials never get committed.
+Remember to **rotate** the default tokens/passwords shown in the example file.
+
+
 ## Sharing the Dashboard Publicly (optional)
 
 Expose Grafana over HTTPS without a port-forward using a Cloudflare quick tunnel:

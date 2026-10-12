@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+
+# Runtime logs (produced by producer.py / detector.py / cloudflared)
+*.log
+
+# Cloudflared tunnel state
+.cloudflared/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/

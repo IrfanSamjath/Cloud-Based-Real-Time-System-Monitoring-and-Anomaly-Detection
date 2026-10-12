@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Anomaly Detector",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/services/detector/detector.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Python: Metric Producer",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/services/producer/producer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run Both (Detector + Producer)",
+      "configurations": [
+        "Python: Anomaly Detector",
+        "Python: Metric Producer"
+      ],
+      "stopAll": true
+    }
+  ]
+}
